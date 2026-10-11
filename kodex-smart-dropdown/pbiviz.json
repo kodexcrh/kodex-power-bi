@@ -1,0 +1,22 @@
+{
+  "visual": {
+    "name": "kodexSmartDropdown",
+    "displayName": "KODEX Smart Dropdown",
+    "guid": "kodexSmartDropdown9A41C2",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Modern dropdown selector for years, months, people and categorical lists.",
+    "supportUrl": "https://learn.microsoft.com/power-bi/developer/visuals/",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "KODEX",
+    "email": "dev@kodex.dev"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less"
+}

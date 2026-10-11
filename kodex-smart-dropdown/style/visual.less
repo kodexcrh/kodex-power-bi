@@ -1,0 +1,80 @@
+@import "../../kodex-design-system/tokens.less";
+.kodex-dropdown {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  user-select: none;
+}
+.kodex-trigger {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 140ms ease;
+}
+.kodex-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+.kodex-chevron {
+  width: 18px;
+  text-align: center;
+  flex: 0 0 18px;
+}
+.kodex-count {
+  font-size: 11px;
+  opacity: .65;
+}
+.kodex-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: hidden;
+  display: none;
+  box-sizing: border-box;
+}
+.kodex-menu.open { display: block; }
+.kodex-search {
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  margin: 8px;
+  padding: 9px 10px;
+  outline: none;
+}
+.kodex-options {
+  overflow-y: auto;
+}
+.kodex-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kodex-check {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  border: 1px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.kodex-option-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

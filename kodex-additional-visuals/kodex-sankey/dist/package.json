@@ -1,0 +1,17 @@
+{
+		"version": "1.1.0.0",
+		"author": {"name":"KODEX","email":"dev@kodex.dev"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/kodexkodexsankey15.pbiviz.json"
+			}
+		],
+		"visual": {"name":"sankey","displayName":"KODEX Sankey","guid":"kodexkodexsankey15","visualClassName":"Visual","version":"1.1.0.0","description":"KODEX Sankey — visual personalizado KODEX para Power BI.","supportUrl":"https://learn.microsoft.com/en-us/power-bi/developer/visuals/","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

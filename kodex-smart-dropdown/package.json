@@ -1,0 +1,17 @@
+{
+  "name": "kodex-smart-dropdown",
+  "version": "1.0.0",
+  "description": "KODEX Smart Dropdown - modern configurable Power BI custom visual",
+  "scripts": {
+    "start": "pbiviz start",
+    "package": "pbiviz package"
+  },
+  "dependencies": {
+    "powerbi-visuals-api": "^5.11.0",
+    "powerbi-visuals-utils-formattingmodel": "^6.0.1"
+  },
+  "devDependencies": {
+    "powerbi-visuals-tools": "^7.2.1",
+    "typescript": "^5.8.3"
+  }
+}

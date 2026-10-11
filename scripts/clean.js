@@ -1,0 +1,1 @@
+const fs=require("fs"),path=require("path");const root=process.cwd();function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=path.join(d,e.name);if(e.isDirectory()){if(["dist","node_modules"].includes(e.name)){fs.rmSync(p,{recursive:true,force:true});continue}walk(p)}}}walk(root);

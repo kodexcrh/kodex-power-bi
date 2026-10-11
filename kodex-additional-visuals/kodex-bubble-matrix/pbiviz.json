@@ -1,0 +1,23 @@
+{
+  "visual": {
+    "name": "bubblematrix",
+    "displayName": "KODEX Bubble Matrix",
+    "guid": "kodexkodexbubblem16",
+    "visualClassName": "Visual",
+    "version": "1.1.0.0",
+    "description": "KODEX Bubble Matrix — visual personalizado KODEX para Power BI.",
+    "supportUrl": "https://learn.microsoft.com/en-us/power-bi/developer/visuals/"
+  },
+  "apiVersion": "5.11.1",
+  "author": {
+    "name": "KODEX",
+    "email": "dev@kodex.dev"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "style": {
+    "visualStyle": "style/visual.less"
+  },
+  "capabilities": "capabilities.json"
+}

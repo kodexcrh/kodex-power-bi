@@ -1,0 +1,73 @@
+{
+  "privileges": [],
+  "dataRoles": [
+    {
+      "displayName": "Lista",
+      "name": "category",
+      "kind": "Grouping",
+      "requiredTypes": [
+        { "text": true },
+        { "integer": true },
+        { "numeric": true },
+        { "dateTime": true }
+      ]
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        { "category": { "max": 1 } }
+      ],
+      "categorical": {
+        "categories": {
+          "for": { "in": "category" },
+          "dataReductionAlgorithm": { "top": { "count": 5000 } }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "container": {
+      "displayName": "Contenedor",
+      "properties": {
+        "background": { "type": { "fill": { "solid": { "color": true } } } },
+        "backgroundOpacity": { "type": { "numeric": true } },
+        "borderColor": { "type": { "fill": { "solid": { "color": true } } } },
+        "borderWidth": { "type": { "numeric": true } },
+        "borderRadius": { "type": { "numeric": true } },
+        "shadow": { "type": { "bool": true } },
+        "shadowOpacity": { "type": { "numeric": true } }
+      }
+    },
+    "text": {
+      "displayName": "Texto",
+      "properties": {
+        "textColor": { "type": { "fill": { "solid": { "color": true } } } },
+        "placeholderColor": { "type": { "fill": { "solid": { "color": true } } } },
+        "fontSize": { "type": { "numeric": true } },
+        "fontFamily": { "type": { "text": true } },
+        "fontWeight": { "type": { "text": true } }
+      }
+    },
+    "accent": {
+      "displayName": "Acento",
+      "properties": {
+        "accentColor": { "type": { "fill": { "solid": { "color": true } } } },
+        "hoverBackground": { "type": { "fill": { "solid": { "color": true } } } },
+        "selectedBackground": { "type": { "fill": { "solid": { "color": true } } } },
+        "selectedTextColor": { "type": { "fill": { "solid": { "color": true } } } }
+      }
+    },
+    "dropdown": {
+      "displayName": "Dropdown",
+      "properties": {
+        "showSearch": { "type": { "bool": true } },
+        "showCount": { "type": { "bool": true } },
+        "multiSelect": { "type": { "bool": true } },
+        "maxHeight": { "type": { "numeric": true } },
+        "optionPadding": { "type": { "numeric": true } },
+        "showChevron": { "type": { "bool": true } }
+      }
+    }
+  }
+}

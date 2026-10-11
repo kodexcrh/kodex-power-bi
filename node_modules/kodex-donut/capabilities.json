@@ -1,0 +1,206 @@
+{
+  "privileges": [],
+  "dataRoles": [
+    {
+      "displayName": "Categoría",
+      "name": "category",
+      "kind": "Grouping",
+      "requiredTypes": [
+        {
+          "text": true
+        },
+        {
+          "integer": true
+        },
+        {
+          "numeric": true
+        }
+      ]
+    },
+    {
+      "displayName": "Valor",
+      "name": "value",
+      "kind": "Measure",
+      "requiredTypes": [
+        {
+          "numeric": true
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "style": {
+      "displayName": "KODEX · Estilo",
+      "properties": {
+        "background": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "backgroundOpacity": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderWidth": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "radius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "primaryColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "secondaryColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "positiveColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "negativeColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "shadow": {
+          "type": {
+            "bool": true
+          }
+        },
+        "glow": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "labels": {
+      "displayName": "KODEX · Etiquetas",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showValues": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showLegend": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "interaction": {
+      "displayName": "KODEX · Interacción",
+      "properties": {
+        "enableSelection": {
+          "type": {
+            "bool": true
+          }
+        },
+        "enableHover": {
+          "type": {
+            "bool": true
+          }
+        },
+        "enableAnimation": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "category": {
+            "max": 1
+          },
+          "value": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "category"
+          }
+        },
+        "values": {
+          "for": {
+            "in": "value"
+          }
+        }
+      }
+    }
+  ]
+}

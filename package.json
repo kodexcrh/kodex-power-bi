@@ -1,0 +1,25 @@
+{
+  "name": "kodex-powerbi-suite-v7",
+  "version": "7.0.0",
+  "private": true,
+  "description": "KODEX private Power BI custom visual suite — production-ready structure and shared design system.",
+  "workspaces": [
+    "kodex-additional-visuals/*"
+  ],
+  "scripts": {
+    "build": "npm run typecheck",
+    "typecheck": "node scripts/typecheck-all.js",
+    "package:all": "node scripts/package-all.js",
+    "package:one": "node scripts/package-one.js",
+    "clean": "node scripts/clean.js",
+    "postinstall": "node scripts/link-api-locally.js"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "powerbi-visuals-tools": "^7.2.1",
+    "typescript": "^5.8.3"
+  }
+}

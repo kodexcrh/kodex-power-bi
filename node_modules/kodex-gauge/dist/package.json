@@ -1,0 +1,17 @@
+{
+		"version": "1.1.0.0",
+		"author": {"name":"KODEX","email":"dev@kodex.dev"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/kodexkodexgauge14.pbiviz.json"
+			}
+		],
+		"visual": {"name":"gauge","displayName":"KODEX Gauge","guid":"kodexkodexgauge14","visualClassName":"Visual","version":"1.1.0.0","description":"KODEX Gauge — visual personalizado KODEX para Power BI.","supportUrl":"https://learn.microsoft.com/en-us/power-bi/developer/visuals/","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}
